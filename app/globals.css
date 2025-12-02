@@ -78,10 +78,11 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  /* Updated font variables to use Oswald, Josefin Sans, and Birdseye */
+  --font-sans: "Josefin Sans", sans-serif;
+  --font-heading: "Oswald", sans-serif;
+  --font-subheading: "Josefin Sans", sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
-  /* Added Lora font for headings and body text */
-  --font-serif: "Lora", serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -128,6 +129,7 @@
     @apply bg-background text-foreground;
   }
 }
+
 
 .gradient-text {
   background: linear-gradient(90deg, #00ffd9 0%, #00aeff 100%);

@@ -1,12 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Lora } from "next/font/google"
+import { Oswald, Josefin_Sans, Birthstone as Birdseye } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _lora = Lora({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
+const _oswald = Oswald({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
+const _josefinSans = Josefin_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
+// const _birdseye = Birdseye({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Ayurooms - Wellness Resorts and Retreats India | Ayurooms",
@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`font-birdseye antialiased`}>
         {children}
         <Analytics />
       </body>
