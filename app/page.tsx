@@ -1,7 +1,15 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
-
+import { useEffect } from "react";
 export default function NewsletterWelcome() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href = "https://www.ayurooms.com/";
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f5fffe] via-[#fafbf8] to-[#fff9f0] flex flex-col">
       {/* Main Content */}
@@ -15,7 +23,7 @@ export default function NewsletterWelcome() {
                 alt="Ayurooms - Holistic Wellness Escapes"
                 width={320}
                 height={120}
-                className="w-full h-auto"
+                className="w-full h-auto mx-auto"
                 priority
               />
             </div>
@@ -29,7 +37,7 @@ export default function NewsletterWelcome() {
               alt="Deep Rooted Newsletter"
               width={500}
               height={140}
-              className="w-auto h-30 md:h-34 max-w-full"
+              className="w-auto h-30 md:h-34 max-w-full mx-auto"
               priority
             />
           </div>
