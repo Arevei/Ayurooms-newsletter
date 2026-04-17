@@ -147,7 +147,7 @@ export default function SocialMediaPage() {
                     <h3 className="text-xl font-semibold text-[#2a2a2a]">{name}</h3>
                     <ArrowRight className="h-4 w-4 text-[#ff9866] transition-transform group-hover:translate-x-1" />
                   </div>
-                  <p className="text-sm font-medium text-[#ff9866]">{handle}</p>
+                 
                   <p className="text-sm leading-6 text-[#666666]">{description}</p>
                 </div>
               </Link>
