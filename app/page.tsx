@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export default function NewsletterWelcome() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.location.href = "https://www.ayurooms.com/";
+      window.location.href = "https://www.ayurooms.in/";
     }, 5000);
 
     return () => clearTimeout(timer);
