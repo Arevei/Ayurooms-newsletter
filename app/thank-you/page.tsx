@@ -80,23 +80,35 @@ export default function ThankYouPage() {
     <main className={`${lora.className} min-h-screen bg-gradient-to-br from-[#f5fffe] via-[#fafbf8] to-[#fff9f0] px-4 py-12 sm:px-6 sm:py-16`}>
       <div className="mx-auto flex max-w-5xl flex-col gap-8">
         <section className="overflow-hidden rounded-[2rem] border border-[#e8d5c4]/50 bg-white/70 shadow-xl shadow-[#7eccc4]/10 backdrop-blur-sm">
-          <div className="grid gap-10 px-6 py-10 sm:px-10 sm:py-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-            <div className="order-2 space-y-6 text-center lg:order-1 lg:text-left">
+          <div className="px-6 py-10 sm:px-10 sm:py-12">
+            <div className="space-y-6 text-center lg:text-left">
               <div className="mx-auto w-fit rounded-full border border-[#7eccc4]/30 bg-[#7eccc4]/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#4f9e96] lg:mx-0">
                 Enquiry Received
               </div>
 
               <div className="space-y-4">
-                <h1 className="mx-auto max-w-xl text-4xl font-semibold text-[#2a2a2a] sm:text-5xl lg:mx-0">
-                  Thank You for Connecting with Ayurooms
-                </h1>
-                <p className="mx-auto max-w-2xl text-xl font-medium leading-8 text-[#4f9e96] lg:mx-0">
+                <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-6 lg:mx-0 lg:flex-row lg:items-center">
+                  <h1 className="max-w-2xl text-4xl font-semibold text-[#2a2a2a] sm:text-5xl">
+                    Thank You for Connecting with Ayurooms
+                  </h1>
+                  <div className="shrink-0 rounded-[2rem] bg-gradient-to-br from-[#ffffff] via-[#fff8f2] to-[#edf9f8] p-5 shadow-inner shadow-[#7eccc4]/10">
+                    <Image
+                      src="/images/logo-color-2.png"
+                      alt="Ayurooms"
+                      width={320}
+                      height={110}
+                      className="h-auto w-48 sm:w-56"
+                      priority
+                    />
+                  </div>
+                </div>
+                <p className="mx-auto max-w-4xl text-xl font-medium leading-8 text-[#4f9e96] lg:mx-0">
                   Your enquiry has been received successfully.
                 </p>
-                <p className="mx-auto max-w-2xl text-lg leading-8 text-[#666666] lg:mx-0">
+                <p className="mx-auto max-w-4xl text-lg leading-8 text-[#666666] lg:mx-0">
                   Thank you for taking the first step towards your wellness journey. We&apos;ve received your details, and our team will review your requirements and reach out to you shortly.
                 </p>
-                <p className="mx-auto max-w-2xl text-lg leading-8 text-[#666666] lg:mx-0">
+                <p className="mx-auto max-w-4xl text-lg leading-8 text-[#666666] lg:mx-0">
                   In the meantime, stay connected with Ayurooms. Discover our latest wellness stories, Ayurveda insights, retreat inspiration, and updates — and follow us across our social channels to continue your wellness journey with us.
                 </p>
               </div>
@@ -110,19 +122,6 @@ export default function ThankYouPage() {
                 Visit Ayurooms
                 <ArrowRight className="h-5 w-5" />
               </Link>
-            </div>
-
-            <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
-              <div className="rounded-[2rem] bg-gradient-to-br from-[#ffffff] via-[#fff8f2] to-[#edf9f8] p-6 shadow-inner shadow-[#7eccc4]/10">
-                <Image
-                  src="/images/logo-color-2.png"
-                  alt="Ayurooms"
-                  width={320}
-                  height={110}
-                  className="h-auto w-56 sm:w-64"
-                  priority
-                />
-              </div>
             </div>
           </div>
         </section>
